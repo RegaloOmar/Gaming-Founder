@@ -24,8 +24,6 @@ struct GamingCardView: View {
                     VStack(spacing: 10) {
                         ProfileSection(imageName: "Astroteemo",
                                        gamertag: "Teemo")
-                        .offset(x: 0, y: -50)
-                        
                         CardDivider()
                         
                         MainGamesView(gamesPlayed: ["Valorant", "LOL"])
@@ -34,6 +32,7 @@ struct GamingCardView: View {
                         
                       
                     }
+                    .offset(x: 0, y: -50)
                 })
             
             
@@ -105,6 +104,7 @@ struct GamesListView: View {
     var body: some View {
         Image(gameName)
             .resizable()
+            .aspectRatio(contentMode: .fill)
             .frame(width: CardStyles.gameImageSize,
                    height: CardStyles.gameImageSize)
             .clipShape(Circle())
