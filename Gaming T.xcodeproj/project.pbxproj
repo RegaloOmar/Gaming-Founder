@@ -14,6 +14,10 @@
 		E52C060729F049F1002D7C11 /* Gaming_TTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C060629F049F1002D7C11 /* Gaming_TTests.swift */; };
 		E52C061129F049F1002D7C11 /* Gaming_TUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C061029F049F1002D7C11 /* Gaming_TUITests.swift */; };
 		E52C061329F049F1002D7C11 /* Gaming_TUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C061229F049F1002D7C11 /* Gaming_TUITestsLaunchTests.swift */; };
+		E52C062129F04B62002D7C11 /* GamingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C062029F04B62002D7C11 /* GamingCardView.swift */; };
+		E52C062429F07745002D7C11 /* Colors+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C062329F07745002D7C11 /* Colors+Styles.swift */; };
+		E52C062629F0B6E5002D7C11 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C062529F0B6E5002D7C11 /* Fonts.swift */; };
+		E52C062829F0BE5A002D7C11 /* CardDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C062729F0BE5A002D7C11 /* CardDivider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		E52C060C29F049F1002D7C11 /* Gaming TUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gaming TUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52C061029F049F1002D7C11 /* Gaming_TUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gaming_TUITests.swift; sourceTree = "<group>"; };
 		E52C061229F049F1002D7C11 /* Gaming_TUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gaming_TUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E52C062029F04B62002D7C11 /* GamingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamingCardView.swift; sourceTree = "<group>"; };
+		E52C062329F07745002D7C11 /* Colors+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Styles.swift"; sourceTree = "<group>"; };
+		E52C062529F0B6E5002D7C11 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E52C062729F0BE5A002D7C11 /* CardDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDivider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,8 @@
 		E52C05F429F049EF002D7C11 /* Gaming T */ = {
 			isa = PBXGroup;
 			children = (
+				E52C062229F0772A002D7C11 /* Utils */,
+				E52C061F29F04B3B002D7C11 /* Card */,
 				E52C05F529F049EF002D7C11 /* Gaming_TApp.swift */,
 				E52C05F729F049EF002D7C11 /* ContentView.swift */,
 				E52C05F929F049F1002D7C11 /* Assets.xcassets */,
@@ -125,6 +135,24 @@
 				E52C061229F049F1002D7C11 /* Gaming_TUITestsLaunchTests.swift */,
 			);
 			path = "Gaming TUITests";
+			sourceTree = "<group>";
+		};
+		E52C061F29F04B3B002D7C11 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				E52C062029F04B62002D7C11 /* GamingCardView.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		E52C062229F0772A002D7C11 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E52C062329F07745002D7C11 /* Colors+Styles.swift */,
+				E52C062529F0B6E5002D7C11 /* Fonts.swift */,
+				E52C062729F0BE5A002D7C11 /* CardDivider.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E52C062129F04B62002D7C11 /* GamingCardView.swift in Sources */,
+				E52C062629F0B6E5002D7C11 /* Fonts.swift in Sources */,
 				E52C05F829F049EF002D7C11 /* ContentView.swift in Sources */,
 				E52C05F629F049EF002D7C11 /* Gaming_TApp.swift in Sources */,
+				E52C062429F07745002D7C11 /* Colors+Styles.swift in Sources */,
+				E52C062829F0BE5A002D7C11 /* CardDivider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
