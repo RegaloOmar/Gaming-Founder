@@ -10,8 +10,12 @@ import SwiftUI
 struct HomeScreen: View {
     var body: some View {
         Rectangle()
-            .fill(LinearGradient(colors: [Color(.primaryBlue), Color(.primaryBlack) ], startPoint: .topLeading, endPoint: .bottomTrailing))
-            .frame(width: .infinity, height: .infinity, alignment: .center)
+            .fill(
+                LinearGradient(
+                    colors: [Color(.primaryBlue), Color(.primaryBlack) ],
+                    startPoint: .topLeading, endPoint: .bottomTrailing
+                )
+            )
             .edgesIgnoringSafeArea(.all)
             .overlay {
                 GamingCardView()

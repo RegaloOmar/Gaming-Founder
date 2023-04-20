@@ -11,7 +11,7 @@ import SwiftUI
 struct Gaming_TApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeScreen()
         }
     }
 }
