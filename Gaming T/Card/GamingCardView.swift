@@ -17,16 +17,30 @@ struct CardStyles {
 struct GamingCardView: View {
     var body: some View {
         ZStack{
-            RoundedRectangle(cornerRadius: 20)
-                .frame(width: 300, height: 600)
+            RoundedRectangle(cornerRadius: 15)
+                .frame(width: 300, height: 570)
                 .foregroundColor(Color(.primaryPurple))
                 .overlay(content: {
-                    VStack(spacing: 10) {
+                    VStack(spacing: 15) {
+                        
                         ProfileSection(imageName: "Astroteemo",
                                        gamertag: "Teemo")
+                        
                         CardDivider()
                         
-                        MainGamesView(gamesPlayed: ["Valorant", "LOL"])
+                        SectionView(SectionList: ["Valorant", "LOL"],
+                                    sectionTitle: "Main Games")
+                        
+                        CardDivider()
+                        
+                        SectionView(SectionList: ["Xbox", "PlayStation", "Steam"],
+                                    sectionTitle: "Favorite Platforms")
+                        
+                        CardDivider()
+                        
+                        ButtonsSection()
+                            .padding(.horizontal, 15.0)
+                            .offset(x: 0, y: 40)
                         
                         Spacer()
                         
@@ -34,9 +48,8 @@ struct GamingCardView: View {
                     }
                     .offset(x: 0, y: -50)
                 })
-            
-            
         }
+        .shadow(radius: 10)
     }
 }
 
@@ -77,18 +90,18 @@ struct ProfileImage: View {
     }
 }
 
-struct MainGamesView: View {
-    let rows = [GridItem(.fixed(50))]
-    let gamesPlayed: [String]
+struct SectionView: View {
+    let SectionList: [String]
+    let sectionTitle: String
     
     var body: some View {
         VStack(spacing: 10) {
-            Text("Main Games")
+            Text(sectionTitle)
                 .font(.title2)
                 .foregroundColor(Color(.primaryBlack))
                 .bold()
             HStack {
-                ForEach(gamesPlayed, id: \.self) {
+                ForEach(SectionList, id: \.self) {
                     GamesListView(gameName: $0)
                 }
             }
@@ -113,6 +126,39 @@ struct GamesListView: View {
                     .stroke(lineWidth: CardStyles.gameLineWidth)
                     .foregroundColor(Color(.primaryBlue))
             }
+            .shadow(radius: 5)
+    }
+}
+
+struct ButtonsSection: View {
+    
+    var body: some View {
+        HStack {
+            CardsButtons(color: .yellow, imageTitle: "x.circle")
+            Spacer()
+            CardsButtons(color: .blue, imageTitle: "arrow.counterclockwise.circle")
+            Spacer()
+            CardsButtons(color: .primary, imageTitle: "flag.circle")
+            Spacer()
+            CardsButtons(color: .red, imageTitle: "heart.circle")
+        }
+    }
+}
+
+struct CardsButtons: View {
+    
+    let color: Color
+    let imageTitle: String
+    
+    var body: some View {
+        Button {
+            
+        } label: {
+            Image(systemName: imageTitle)
+                .resizable()
+                .frame(width: 50, height: 50)
+                .foregroundColor(color)
+        }
     }
 }
 

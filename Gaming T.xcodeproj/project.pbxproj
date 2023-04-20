@@ -18,6 +18,7 @@
 		E52C062429F07745002D7C11 /* Colors+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C062329F07745002D7C11 /* Colors+Styles.swift */; };
 		E52C062629F0B6E5002D7C11 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C062529F0B6E5002D7C11 /* Fonts.swift */; };
 		E52C062829F0BE5A002D7C11 /* CardDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C062729F0BE5A002D7C11 /* CardDivider.swift */; };
+		E52C062B29F1D3B2002D7C11 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C062A29F1D3B2002D7C11 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		E52C062329F07745002D7C11 /* Colors+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Styles.swift"; sourceTree = "<group>"; };
 		E52C062529F0B6E5002D7C11 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		E52C062729F0BE5A002D7C11 /* CardDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDivider.swift; sourceTree = "<group>"; };
+		E52C062A29F1D3B2002D7C11 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		E52C05F429F049EF002D7C11 /* Gaming T */ = {
 			isa = PBXGroup;
 			children = (
+				E52C062929F1D3A3002D7C11 /* Home */,
 				E52C062229F0772A002D7C11 /* Utils */,
 				E52C061F29F04B3B002D7C11 /* Card */,
 				E52C05F529F049EF002D7C11 /* Gaming_TApp.swift */,
@@ -153,6 +156,14 @@
 				E52C062729F0BE5A002D7C11 /* CardDivider.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		E52C062929F1D3A3002D7C11 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E52C062A29F1D3B2002D7C11 /* HomeScreen.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +298,7 @@
 			files = (
 				E52C062129F04B62002D7C11 /* GamingCardView.swift in Sources */,
 				E52C062629F0B6E5002D7C11 /* Fonts.swift in Sources */,
+				E52C062B29F1D3B2002D7C11 /* HomeScreen.swift in Sources */,
 				E52C05F829F049EF002D7C11 /* ContentView.swift in Sources */,
 				E52C05F629F049EF002D7C11 /* Gaming_TApp.swift in Sources */,
 				E52C062429F07745002D7C11 /* Colors+Styles.swift in Sources */,
