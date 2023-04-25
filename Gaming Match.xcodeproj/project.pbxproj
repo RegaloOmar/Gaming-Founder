@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F18347229F773C800E5BD34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F18347129F773C800E5BD34 /* GoogleService-Info.plist */; };
+		9F18347529F7777400E5BD34 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9F18347429F7777400E5BD34 /* FirebaseAnalytics */; };
+		9F18347729F7777400E5BD34 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9F18347629F7777400E5BD34 /* FirebaseAuth */; };
+		9F18347929F7777400E5BD34 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 9F18347829F7777400E5BD34 /* FirebaseAuthCombine-Community */; };
+		9F18347B29F7777400E5BD34 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9F18347A29F7777400E5BD34 /* FirebaseCrashlytics */; };
+		9F18347D29F7777400E5BD34 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9F18347C29F7777400E5BD34 /* FirebaseDatabase */; };
+		9F18347F29F7777400E5BD34 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9F18347E29F7777400E5BD34 /* FirebaseDatabaseSwift */; };
 		E52C05F629F049EF002D7C11 /* Gaming_TApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C05F529F049EF002D7C11 /* Gaming_TApp.swift */; };
-		E52C05F829F049EF002D7C11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C05F729F049EF002D7C11 /* ContentView.swift */; };
 		E52C05FA29F049F1002D7C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52C05F929F049F1002D7C11 /* Assets.xcassets */; };
 		E52C05FD29F049F1002D7C11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52C05FC29F049F1002D7C11 /* Preview Assets.xcassets */; };
 		E52C060729F049F1002D7C11 /* Gaming_TTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C060629F049F1002D7C11 /* Gaming_TTests.swift */; };
@@ -40,9 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F18347129F773C800E5BD34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E52C05F229F049EF002D7C11 /* Gaming Match.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gaming Match.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52C05F529F049EF002D7C11 /* Gaming_TApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gaming_TApp.swift; sourceTree = "<group>"; };
-		E52C05F729F049EF002D7C11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E52C05F929F049F1002D7C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E52C05FC29F049F1002D7C11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E52C060229F049F1002D7C11 /* Gaming MatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gaming MatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +69,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F18347F29F7777400E5BD34 /* FirebaseDatabaseSwift in Frameworks */,
+				9F18347D29F7777400E5BD34 /* FirebaseDatabase in Frameworks */,
+				9F18347529F7777400E5BD34 /* FirebaseAnalytics in Frameworks */,
+				9F18347B29F7777400E5BD34 /* FirebaseCrashlytics in Frameworks */,
+				9F18347929F7777400E5BD34 /* FirebaseAuthCombine-Community in Frameworks */,
+				9F18347729F7777400E5BD34 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,11 +118,11 @@
 		E52C05F429F049EF002D7C11 /* Gaming Match */ = {
 			isa = PBXGroup;
 			children = (
+				9F18347129F773C800E5BD34 /* GoogleService-Info.plist */,
 				E52C062929F1D3A3002D7C11 /* Home */,
 				E52C062229F0772A002D7C11 /* Utils */,
 				E52C061F29F04B3B002D7C11 /* Card */,
 				E52C05F529F049EF002D7C11 /* Gaming_TApp.swift */,
-				E52C05F729F049EF002D7C11 /* ContentView.swift */,
 				E52C05F929F049F1002D7C11 /* Assets.xcassets */,
 				E52C05FB29F049F1002D7C11 /* Preview Content */,
 			);
@@ -193,6 +205,14 @@
 			dependencies = (
 			);
 			name = "Gaming Match";
+			packageProductDependencies = (
+				9F18347429F7777400E5BD34 /* FirebaseAnalytics */,
+				9F18347629F7777400E5BD34 /* FirebaseAuth */,
+				9F18347829F7777400E5BD34 /* FirebaseAuthCombine-Community */,
+				9F18347A29F7777400E5BD34 /* FirebaseCrashlytics */,
+				9F18347C29F7777400E5BD34 /* FirebaseDatabase */,
+				9F18347E29F7777400E5BD34 /* FirebaseDatabaseSwift */,
+			);
 			productName = "Gaming T";
 			productReference = E52C05F229F049EF002D7C11 /* Gaming Match.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +285,9 @@
 				Base,
 			);
 			mainGroup = E52C05E929F049EF002D7C11;
+			packageReferences = (
+				9F18347329F7777400E5BD34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E52C05F329F049EF002D7C11 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -283,6 +306,7 @@
 			files = (
 				E52C05FD29F049F1002D7C11 /* Preview Assets.xcassets in Resources */,
 				E52C05FA29F049F1002D7C11 /* Assets.xcassets in Resources */,
+				9F18347229F773C800E5BD34 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +334,6 @@
 				E52C062129F04B62002D7C11 /* GamingCardView.swift in Sources */,
 				E52C062629F0B6E5002D7C11 /* Fonts.swift in Sources */,
 				E52C062B29F1D3B2002D7C11 /* HomeScreen.swift in Sources */,
-				E52C05F829F049EF002D7C11 /* ContentView.swift in Sources */,
 				E52C05F629F049EF002D7C11 /* Gaming_TApp.swift in Sources */,
 				E52C062429F07745002D7C11 /* Colors+Styles.swift in Sources */,
 				E52C062E29F1DA19002D7C11 /* PlayersData.swift in Sources */,
@@ -472,7 +495,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Gaming T/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Gaming Match/Preview Content\"";
 				DEVELOPMENT_TEAM = 6A8498PHTR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -503,7 +526,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Gaming T/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Gaming Match/Preview Content\"";
 				DEVELOPMENT_TEAM = 6A8498PHTR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -643,6 +666,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F18347329F7777400E5BD34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F18347429F7777400E5BD34 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F18347329F7777400E5BD34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		9F18347629F7777400E5BD34 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F18347329F7777400E5BD34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9F18347829F7777400E5BD34 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F18347329F7777400E5BD34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		9F18347A29F7777400E5BD34 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F18347329F7777400E5BD34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		9F18347C29F7777400E5BD34 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F18347329F7777400E5BD34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		9F18347E29F7777400E5BD34 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F18347329F7777400E5BD34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E52C05EA29F049EF002D7C11 /* Project object */;
 }
