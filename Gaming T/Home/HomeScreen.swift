@@ -20,7 +20,6 @@ struct HomeScreen: View {
             .overlay {
                 GamingCardView()
             }
-            
     }
 }
 

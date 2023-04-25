@@ -15,11 +15,15 @@ struct CardStyles {
 }
 
 struct GamingCardView: View {
+    
+    @State private var offset = CGSize.zero
+    @State private var backgroundColor: Color = Color(.primaryPurple)
+    
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 15)
                 .frame(width: 300, height: 570)
-                .foregroundColor(Color(.primaryPurple))
+                .foregroundColor(backgroundColor)
                 .overlay(content: {
                     VStack(spacing: 15) {
                         
@@ -43,13 +47,53 @@ struct GamingCardView: View {
                             .offset(x: 0, y: 40)
                         
                         Spacer()
-                        
-                      
                     }
                     .offset(x: 0, y: -50)
                 })
         }
         .shadow(radius: 10)
+        .offset(x: offset.width, y: offset.height * 0.4)
+        .rotationEffect(.degrees(Double(offset.width / 40.0)))
+        .gesture(
+            DragGesture()
+                .onChanged { gesture in
+                    offset = gesture.translation
+                    withAnimation {
+                        changeColor(width: offset.width)
+                    }
+                }
+                .onEnded { _ in
+                    withAnimation {
+                        swipeCard(width: offset.width)
+                    }
+                }
+        )
+    }
+    
+    private func swipeCard(width: CGFloat) {
+        switch width {
+            //Gesto para rechazar
+        case -500...(-150):
+            offset = CGSize(width: -500.0, height: 0.0)
+            //Gesto para Match
+        case 150...(500):
+            offset = CGSize(width: 500.0, height: 0.0)
+        default:
+            offset = .zero
+        }
+    }
+    
+    private func changeColor(width: CGFloat) {
+        switch width {
+            //Gesto para rechazar
+        case -500...(-150):
+            backgroundColor = .red
+            //Gesto para Match
+        case 150...(500):
+            backgroundColor = .green
+        default:
+            backgroundColor = Color(.primaryPurple)
+        }
     }
 }
 
@@ -134,13 +178,13 @@ struct ButtonsSection: View {
     
     var body: some View {
         HStack {
-            CardsButtons(color: .yellow, imageTitle: "x.circle")
+            CardsButtons(color: .red, imageTitle: "x.circle")
             Spacer()
             CardsButtons(color: .blue, imageTitle: "arrow.counterclockwise.circle")
             Spacer()
             CardsButtons(color: .primary, imageTitle: "flag.circle")
             Spacer()
-            CardsButtons(color: .red, imageTitle: "heart.circle")
+            CardsButtons(color: .green, imageTitle: "heart.circle")
         }
     }
 }
