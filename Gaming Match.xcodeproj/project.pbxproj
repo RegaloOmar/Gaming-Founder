@@ -14,6 +14,8 @@
 		9F18347B29F7777400E5BD34 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9F18347A29F7777400E5BD34 /* FirebaseCrashlytics */; };
 		9F18347D29F7777400E5BD34 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9F18347C29F7777400E5BD34 /* FirebaseDatabase */; };
 		9F18347F29F7777400E5BD34 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9F18347E29F7777400E5BD34 /* FirebaseDatabaseSwift */; };
+		9F18348229F79FD600E5BD34 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F18348129F79FD600E5BD34 /* LoginView.swift */; };
+		9F18348429F7A10C00E5BD34 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F18348329F7A10C00E5BD34 /* LoginViewModel.swift */; };
 		E52C05F629F049EF002D7C11 /* Gaming_TApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C05F529F049EF002D7C11 /* Gaming_TApp.swift */; };
 		E52C05FA29F049F1002D7C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52C05F929F049F1002D7C11 /* Assets.xcassets */; };
 		E52C05FD29F049F1002D7C11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52C05FC29F049F1002D7C11 /* Preview Assets.xcassets */; };
@@ -47,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		9F18347129F773C800E5BD34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9F18348129F79FD600E5BD34 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9F18348329F7A10C00E5BD34 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E52C05F229F049EF002D7C11 /* Gaming Match.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gaming Match.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52C05F529F049EF002D7C11 /* Gaming_TApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gaming_TApp.swift; sourceTree = "<group>"; };
 		E52C05F929F049F1002D7C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F18348029F79FC500E5BD34 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9F18348129F79FD600E5BD34 /* LoginView.swift */,
+				9F18348329F7A10C00E5BD34 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		E52C05E929F049EF002D7C11 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +131,7 @@
 		E52C05F429F049EF002D7C11 /* Gaming Match */ = {
 			isa = PBXGroup;
 			children = (
+				9F18348029F79FC500E5BD34 /* Login */,
 				9F18347129F773C800E5BD34 /* GoogleService-Info.plist */,
 				E52C062929F1D3A3002D7C11 /* Home */,
 				E52C062229F0772A002D7C11 /* Utils */,
@@ -337,7 +351,9 @@
 				E52C05F629F049EF002D7C11 /* Gaming_TApp.swift in Sources */,
 				E52C062429F07745002D7C11 /* Colors+Styles.swift in Sources */,
 				E52C062E29F1DA19002D7C11 /* PlayersData.swift in Sources */,
+				9F18348229F79FD600E5BD34 /* LoginView.swift in Sources */,
 				E52C062829F0BE5A002D7C11 /* CardDivider.swift in Sources */,
+				9F18348429F7A10C00E5BD34 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
