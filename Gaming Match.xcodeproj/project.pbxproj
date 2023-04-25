@@ -40,14 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E52C05F229F049EF002D7C11 /* Gaming T.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gaming T.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52C05F229F049EF002D7C11 /* Gaming Match.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gaming Match.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52C05F529F049EF002D7C11 /* Gaming_TApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gaming_TApp.swift; sourceTree = "<group>"; };
 		E52C05F729F049EF002D7C11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E52C05F929F049F1002D7C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E52C05FC29F049F1002D7C11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E52C060229F049F1002D7C11 /* Gaming TTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gaming TTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52C060229F049F1002D7C11 /* Gaming MatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gaming MatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52C060629F049F1002D7C11 /* Gaming_TTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gaming_TTests.swift; sourceTree = "<group>"; };
-		E52C060C29F049F1002D7C11 /* Gaming TUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gaming TUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52C060C29F049F1002D7C11 /* Gaming MatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gaming MatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52C061029F049F1002D7C11 /* Gaming_TUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gaming_TUITests.swift; sourceTree = "<group>"; };
 		E52C061229F049F1002D7C11 /* Gaming_TUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gaming_TUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E52C062029F04B62002D7C11 /* GamingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamingCardView.swift; sourceTree = "<group>"; };
@@ -96,9 +96,9 @@
 		E52C05F329F049EF002D7C11 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E52C05F229F049EF002D7C11 /* Gaming T.app */,
-				E52C060229F049F1002D7C11 /* Gaming TTests.xctest */,
-				E52C060C29F049F1002D7C11 /* Gaming TUITests.xctest */,
+				E52C05F229F049EF002D7C11 /* Gaming Match.app */,
+				E52C060229F049F1002D7C11 /* Gaming MatchTests.xctest */,
+				E52C060C29F049F1002D7C11 /* Gaming MatchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,9 +180,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E52C05F129F049EF002D7C11 /* Gaming T */ = {
+		E52C05F129F049EF002D7C11 /* Gaming Match */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E52C061629F049F1002D7C11 /* Build configuration list for PBXNativeTarget "Gaming T" */;
+			buildConfigurationList = E52C061629F049F1002D7C11 /* Build configuration list for PBXNativeTarget "Gaming Match" */;
 			buildPhases = (
 				E52C05EE29F049EF002D7C11 /* Sources */,
 				E52C05EF29F049EF002D7C11 /* Frameworks */,
@@ -192,14 +192,14 @@
 			);
 			dependencies = (
 			);
-			name = "Gaming T";
+			name = "Gaming Match";
 			productName = "Gaming T";
-			productReference = E52C05F229F049EF002D7C11 /* Gaming T.app */;
+			productReference = E52C05F229F049EF002D7C11 /* Gaming Match.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E52C060129F049F1002D7C11 /* Gaming TTests */ = {
+		E52C060129F049F1002D7C11 /* Gaming MatchTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E52C061929F049F1002D7C11 /* Build configuration list for PBXNativeTarget "Gaming TTests" */;
+			buildConfigurationList = E52C061929F049F1002D7C11 /* Build configuration list for PBXNativeTarget "Gaming MatchTests" */;
 			buildPhases = (
 				E52C05FE29F049F1002D7C11 /* Sources */,
 				E52C05FF29F049F1002D7C11 /* Frameworks */,
@@ -210,14 +210,14 @@
 			dependencies = (
 				E52C060429F049F1002D7C11 /* PBXTargetDependency */,
 			);
-			name = "Gaming TTests";
+			name = "Gaming MatchTests";
 			productName = "Gaming TTests";
-			productReference = E52C060229F049F1002D7C11 /* Gaming TTests.xctest */;
+			productReference = E52C060229F049F1002D7C11 /* Gaming MatchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E52C060B29F049F1002D7C11 /* Gaming TUITests */ = {
+		E52C060B29F049F1002D7C11 /* Gaming MatchUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E52C061C29F049F1002D7C11 /* Build configuration list for PBXNativeTarget "Gaming TUITests" */;
+			buildConfigurationList = E52C061C29F049F1002D7C11 /* Build configuration list for PBXNativeTarget "Gaming MatchUITests" */;
 			buildPhases = (
 				E52C060829F049F1002D7C11 /* Sources */,
 				E52C060929F049F1002D7C11 /* Frameworks */,
@@ -228,9 +228,9 @@
 			dependencies = (
 				E52C060E29F049F1002D7C11 /* PBXTargetDependency */,
 			);
-			name = "Gaming TUITests";
+			name = "Gaming MatchUITests";
 			productName = "Gaming TUITests";
-			productReference = E52C060C29F049F1002D7C11 /* Gaming TUITests.xctest */;
+			productReference = E52C060C29F049F1002D7C11 /* Gaming MatchUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -256,7 +256,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E52C05ED29F049EF002D7C11 /* Build configuration list for PBXProject "Gaming T" */;
+			buildConfigurationList = E52C05ED29F049EF002D7C11 /* Build configuration list for PBXProject "Gaming Match" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -269,9 +269,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E52C05F129F049EF002D7C11 /* Gaming T */,
-				E52C060129F049F1002D7C11 /* Gaming TTests */,
-				E52C060B29F049F1002D7C11 /* Gaming TUITests */,
+				E52C05F129F049EF002D7C11 /* Gaming Match */,
+				E52C060129F049F1002D7C11 /* Gaming MatchTests */,
+				E52C060B29F049F1002D7C11 /* Gaming MatchUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -340,12 +340,12 @@
 /* Begin PBXTargetDependency section */
 		E52C060429F049F1002D7C11 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E52C05F129F049EF002D7C11 /* Gaming T */;
+			target = E52C05F129F049EF002D7C11 /* Gaming Match */;
 			targetProxy = E52C060329F049F1002D7C11 /* PBXContainerItemProxy */;
 		};
 		E52C060E29F049F1002D7C11 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E52C05F129F049EF002D7C11 /* Gaming T */;
+			target = E52C05F129F049EF002D7C11 /* Gaming Match */;
 			targetProxy = E52C060D29F049F1002D7C11 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -476,6 +476,8 @@
 				DEVELOPMENT_TEAM = 6A8498PHTR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GM;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -485,8 +487,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.regy.Gaming-T";
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.regy.Gaming-Match";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -505,6 +507,8 @@
 				DEVELOPMENT_TEAM = 6A8498PHTR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GM;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -514,8 +518,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.regy.Gaming-T";
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.regy.Gaming-Match";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -539,7 +543,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gaming T.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gaming T";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gaming Match.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gaming Match";
 			};
 			name = Debug;
 		};
@@ -559,7 +563,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gaming T.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gaming T";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gaming Match.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gaming Match";
 			};
 			name = Release;
 		};
@@ -602,7 +606,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E52C05ED29F049EF002D7C11 /* Build configuration list for PBXProject "Gaming T" */ = {
+		E52C05ED29F049EF002D7C11 /* Build configuration list for PBXProject "Gaming Match" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E52C061429F049F1002D7C11 /* Debug */,
@@ -611,7 +615,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E52C061629F049F1002D7C11 /* Build configuration list for PBXNativeTarget "Gaming T" */ = {
+		E52C061629F049F1002D7C11 /* Build configuration list for PBXNativeTarget "Gaming Match" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E52C061729F049F1002D7C11 /* Debug */,
@@ -620,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E52C061929F049F1002D7C11 /* Build configuration list for PBXNativeTarget "Gaming TTests" */ = {
+		E52C061929F049F1002D7C11 /* Build configuration list for PBXNativeTarget "Gaming MatchTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E52C061A29F049F1002D7C11 /* Debug */,
@@ -629,7 +633,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E52C061C29F049F1002D7C11 /* Build configuration list for PBXNativeTarget "Gaming TUITests" */ = {
+		E52C061C29F049F1002D7C11 /* Build configuration list for PBXNativeTarget "Gaming MatchUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E52C061D29F049F1002D7C11 /* Debug */,
