@@ -86,7 +86,7 @@
 		E52C05E929F049EF002D7C11 = {
 			isa = PBXGroup;
 			children = (
-				E52C05F429F049EF002D7C11 /* Gaming T */,
+				E52C05F429F049EF002D7C11 /* Gaming Match */,
 				E52C060529F049F1002D7C11 /* Gaming TTests */,
 				E52C060F29F049F1002D7C11 /* Gaming TUITests */,
 				E52C05F329F049EF002D7C11 /* Products */,
@@ -103,7 +103,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E52C05F429F049EF002D7C11 /* Gaming T */ = {
+		E52C05F429F049EF002D7C11 /* Gaming Match */ = {
 			isa = PBXGroup;
 			children = (
 				E52C062929F1D3A3002D7C11 /* Home */,
@@ -114,7 +114,7 @@
 				E52C05F929F049F1002D7C11 /* Assets.xcassets */,
 				E52C05FB29F049F1002D7C11 /* Preview Content */,
 			);
-			path = "Gaming T";
+			path = "Gaming Match";
 			sourceTree = "<group>";
 		};
 		E52C05FB29F049F1002D7C11 /* Preview Content */ = {
