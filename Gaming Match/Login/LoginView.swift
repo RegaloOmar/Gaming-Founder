@@ -6,17 +6,20 @@
 //
 
 import SwiftUI
-import FirebaseAuth
+import GoogleSignInSwift
+import GoogleSignIn
 
 struct LoginView: View {
-    
+    @StateObject private var loginViewModel: LoginViewModel = LoginViewModel()
     @State var user: String = ""
     @State var password: String = ""
+    
+    
     let purple = Color(.primaryPurple)
     
     var body: some View {
         VStack {
-            Text("Login with")
+            Text("Sign up or Login")
                 .font(.system(.largeTitle,
                               design: .rounded,
                               weight: .bold))
@@ -55,11 +58,18 @@ struct LoginView: View {
                 }
                 
                 Button{
-                    
+                    loginViewModel.createUser(withEmail: user, password: password)
                 } label: {
-                    Text("Login")
+                    RoundedRectangle(cornerRadius: 10)
+                        .frame(height: 50)
+                        .foregroundColor(Color(.primaryPurple))
+                        .overlay {
+                            Text("Sign Up")
+                                .font(.system(.title, design: .rounded, weight: .bold))
+                                .foregroundColor(Color(.primaryBlack))
+                        }
                 }
-                .padding()
+                .padding(.vertical, 20)
                 
                 
             }
@@ -71,6 +81,58 @@ struct LoginView: View {
                                   design: .rounded,
                                   weight: .bold))
                     .foregroundColor(Color(.primaryPurple))
+            }
+            
+            VStack {
+                Button{
+                    
+                } label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(.orange)
+                            .frame(height: 50, alignment: .leading)
+                            .overlay {
+                                HStack(alignment: .center) {
+                                    Image(systemName: "envelope")
+                                        .resizable()
+                                        .foregroundColor(.primary)
+                                    .frame(width: 30,
+                                           height: 25,
+                                           alignment: .leading)
+                                    
+                                    Text("Login with Email/Password")
+                                        .font(.system(.headline, design: .default, weight: .bold))
+                                        .foregroundColor(.primary)
+                                    
+                                    Spacer()
+                                }
+                                .padding(.horizontal, 15)
+                            }
+                    }
+                }.padding(.vertical)
+                
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(.primary)
+                        .frame(height: 50, alignment: .leading)
+                        .overlay {
+                            HStack(alignment: .center) {
+                                Image("Google Logo")
+                                    .resizable()
+                                .frame(width: 30,
+                                       height: 25,
+                                       alignment: .leading)
+                                
+                                Text("Login with Google")
+                                    .font(.system(.headline, design: .default, weight: .bold))
+                                    .foregroundColor(Color(.primaryBlack))
+                                
+                                Spacer()
+                            }
+                            .padding(.horizontal, 15)
+                        }
+                }
+                
             }
             
             Spacer()

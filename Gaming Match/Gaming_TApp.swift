@@ -10,12 +10,14 @@ import FirebaseCore
 import FirebaseAuth
 
 class AppDelegate: NSObject, UIApplicationDelegate {
-  func application(_ application: UIApplication,
+    func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
     return true
-  }
+    }
 }
+
+
 
 @main
 struct Gaming_TApp: App {
@@ -23,7 +25,7 @@ struct Gaming_TApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeScreen()
+            LoginView()
         }
     }
 }
