@@ -32,12 +32,12 @@ struct LoginView: View {
                         .font(.title3)
                         .foregroundColor(purple)
                     
-                    TextField("User", text: $user)
+                    TextField("Email", text: $user)
                         .font(.system(size: 17.0, weight: .light))
                         .foregroundColor(Color(.primaryPurple))
                         .frame(height: 44)
                         .padding(.horizontal, 12)
-                        .background(Color.white)
+                        .background(Color(.primaryBlack))
                         .cornerRadius(4.0)
                     
                 }
@@ -52,7 +52,7 @@ struct LoginView: View {
                         .foregroundColor(Color(.primaryPurple))
                         .frame(height: 44)
                         .padding(.horizontal, 12)
-                        .background(Color.white)
+                        .background(Color(.primaryBlack))
                         .cornerRadius(4.0)
                     
                 }
@@ -86,10 +86,11 @@ struct LoginView: View {
             VStack {
                 Button{
                     
+                    
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
-                            .fill(.orange)
+                            .fill(.blue)
                             .frame(height: 50, alignment: .leading)
                             .overlay {
                                 HStack(alignment: .center) {
